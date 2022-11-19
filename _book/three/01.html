@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction1 · GitBook</title>
+        <title>第1节：three入门 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="01.html" />
     
-    <link rel="prev" href="../" />
+    
+    <link rel="prev" href="three.html" />
     
 
     </head>
@@ -98,15 +100,54 @@
             
 
             
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    WebGL
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="three.html">
+            
+                <a href="three.html">
+            
+                    
+                    three
+            
+                </a>
+            
+
+            
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1.1" data-path="01.html">
+        <li class="chapter active" data-level="1.3.1" data-path="01.html">
             
                 <a href="01.html">
             
                     
-                    Introduction1
+                    第1节：three入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    第2节：三维机房
             
                 </a>
             
@@ -149,7 +190,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Introduction1</a>
+        <a href=".." >第1节：three入门</a>
     </h1>
 </div>
 
@@ -164,435 +205,317 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x524D;&#x8A00;</p>
+                                <h2 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h2>
+<h3 id="&#x8BFE;&#x4EF6;&#x5730;&#x5740;">&#x8BFE;&#x4EF6;&#x5730;&#x5740;</h3>
+<p><a href="https://github.com/buglas/threejs-lesson" target="_blank">https://github.com/buglas/threejs-lesson</a></p>
 <h3 id="&#x8BFE;&#x524D;&#x51C6;&#x5907;">&#x8BFE;&#x524D;&#x51C6;&#x5907;</h3>
 <ol>
-<li>&#x5B89;&#x88C5;webstorm &#x6216;vscode &#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x3002;</li>
-<li>&#x5B89;&#x88C5;live-server&#xFF0C;&#x7528;&#x4E8E;&#x542F;&#x670D;&#x52A1;&#xFF0C;&#x5B89;&#x88C5;&#x65B9;&#x6CD5; npm i -g live-server</li>
 <li>&#x9700;&#x638C;&#x63E1;es6&#x3001;html&#x3001;css &#x7684;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x3002;</li>
-<li>&#x6570;&#x5B66;&#x57FA;&#x7840;&#xFF0C;&#x4E09;&#x89D2;&#x51FD;&#x6570;&#x548C;&#x5411;&#x91CF;&#xFF08;&#x975E;&#x5FC5;&#x987B;&#xFF09;&#x3002;</li>
+<li>&#x56FE;&#x5F62;&#x5B66;&#x57FA;&#x7840;&#xFF0C;&#x4E09;&#x89D2;&#x51FD;&#x6570;&#x3001;&#x5411;&#x91CF;&#x3001;&#x77E9;&#x9635;&#x7B49;&#x3002;</li>
+<li>WebGL  &#x57FA;&#x7840;&#x3002;</li>
 </ol>
 <h3 id="&#x8BFE;&#x5802;&#x76EE;&#x6807;">&#x8BFE;&#x5802;&#x76EE;&#x6807;</h3>
 <ol>
-<li>&#x5BF9;webgl &#x7684;&#x6982;&#x5FF5;&#x6709;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x8BA4;&#x77E5;</li>
-<li>&#x638C;&#x63E1;webgl &#x57FA;&#x672C;&#x7ED8;&#x56FE;&#x539F;&#x7406;&#x548C;&#x6D41;&#x7A0B;</li>
+<li>&#x8BA4;&#x8BC6;three.js</li>
+<li>&#x638C;&#x63E1;three.js &#x57FA;&#x672C;&#x7ED8;&#x56FE;&#x539F;&#x7406;&#x548C;&#x6D41;&#x7A0B;</li>
 </ol>
 <h3 id="&#x77E5;&#x8BC6;&#x70B9;">&#x77E5;&#x8BC6;&#x70B9;</h3>
 <ol>
-<li>webgl &#x6982;&#x8FF0;</li>
-<li>webgl &#x6700;&#x77ED;&#x6559;&#x7A0B; - &#x5728;&#x753B;&#x5E03;&#x4E0A;&#x5237;&#x5E95;&#x8272;</li>
-<li>webgl &#x6700;&#x7B80;&#x5355;&#x56FE;&#x5F62; - &#x753B;&#x4E00;&#x4E2A;&#x70B9;</li>
+<li>threejs &#x6982;&#x8FF0;</li>
+<li>&#x642D;&#x5EFA;threejs &#x573A;&#x666F;</li>
 </ol>
-<h2 id="&#x7B2C;&#x4E00;&#x7AE0;-webgl&#x6982;&#x8FF0;">&#x7B2C;&#x4E00;&#x7AE0; webgl&#x6982;&#x8FF0;</h2>
-<h3 id="1-webgl&#x662F;&#x4EC0;&#x4E48;&#xFF1F;">1-webgl&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h3>
-<p>webgl &#x662F;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#x7ED8;&#x5236;&#x548C;&#x6E32;&#x67D3;&#x4E09;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x7528;&#x6237;&#x4E0E;&#x5176;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x5B66;&#x8FC7;&#x7684;div+css&#x3001;canvas 2d &#x90FD;&#x662F;&#x4E13;&#x6CE8;&#x4E8E;&#x4E8C;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#xFF0C;&#x5B83;&#x4EEC;&#x867D;&#x7136;&#x4E5F;&#x80FD;&#x6A21;&#x62DF;&#x4E00;&#x90E8;&#x5206;&#x4E09;&#x7EF4;&#x6548;&#x679C;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x548C;webgl &#x6BD4;&#x8D77;&#x6765;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x73A9;&#x5177;&#x67AA;&#x548C;AK47&#x7684;&#x5DEE;&#x522B;&#x3002;</p>
-<p><img src="images/image-20200910114631225.png" alt="image-20200910114631225"></p>
-<h3 id="2-webgl&#x884C;&#x4E1A;&#x80CC;&#x666F;">2-webgl&#x884C;&#x4E1A;&#x80CC;&#x666F;</h3>
-<p>&#x968F;&#x7740; 5G &#x65F6;&#x4EE3;&#x7684;&#x5230;&#x6765;&#xFF0C;3D&#x53EF;&#x89C6;&#x5316;&#x9700;&#x6C42;&#x5927;&#x91CF;&#x6D8C;&#x73B0;&#x3002;3D &#x6E38;&#x620F;&#xFF0C;&#x9177;&#x70AB;&#x7684;&#x6D3B;&#x52A8;&#x5BA3;&#x4F20;&#x9875;&#xFF0C;&#x4E09;&#x7EF4;&#x6570;&#x5B57;&#x57CE;&#x5E02;&#xFF0C;VR&#x5168;&#x666F;&#x5C55;&#x793A;&#x3001;3D &#x4EA7;&#x54C1;&#x5C55;&#x793A;&#x7B49;&#x9886;&#x57DF;&#x4E2D;&#xFF0C;&#x5F88;&#x591A;&#x9879;&#x76EE;&#x90FD;&#x662F;&#x7528; WebGL &#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x4E5F;&#x53EA;&#x80FD;&#x7528;WebGL&#x6765;&#x505A;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;WebGL &#x7684;&#x65F6;&#x4EE3;&#x5C31;&#x5728;&#x773C;&#x524D;&#x4E86;&#x3002;</p>
-<p><img src="images/image-20200910114833351.png" alt="image-20200910114833351"></p>
-<p>&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x5B9E;&#x9645;&#x6848;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;WebGL &#x80FD;&#x505A;&#x4EC0;&#x4E48;&#xFF1A;</p>
+<h2 id="&#x7B2C;&#x4E00;&#x7AE0;-threejs-&#x6982;&#x8FF0;">&#x7B2C;&#x4E00;&#x7AE0; three.js &#x6982;&#x8FF0;</h2>
+<h3 id="1-threejs-&#x662F;&#x4EC0;&#x4E48;&#xFF1F;">1-three.js &#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h3>
+<p>three.js&#x662F;&#x7528;JavaScript&#x7F16;&#x5199;&#x7684;WebGL&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x8BFE;&#x7A0B;&#x91CC;&#x5C31;&#x5C06;&#x5176;&#x7B80;&#x79F0;&#x4E3A;three &#x4E86;&#x3002;</p>
+<p>three &#x63D0;&#x4F9B;&#x4E86;&#x975E;&#x5E38;&#x591A;&#x7684;3D&#x663E;&#x793A;&#x548C;&#x7F16;&#x8F91;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF0C;three &#x662F;&#x4E00;&#x6B3E;&#x8FD0;&#x884C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684; 3D &#x5F15;&#x64CE;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;three  &#x521B;&#x5EFA;&#x5404;&#x79CD;&#x4E09;&#x7EF4;&#x573A;&#x666F;&#xFF0C;&#x5E76;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x7F16;&#x8F91;&#x3002;</p>
+<p>&#x5728;three &#x7684;&#x5B98;&#x7F51;&#x4E0A;&#x770B;&#x5230;&#x8BB8;&#x591A;&#x7CBE;&#x5F69;&#x7684;&#x6F14;&#x793A;&#x548C;&#x6587;&#x6863;&#x3002;</p>
+<p>three &#x5B98;&#x7F51;&#xFF1A;<a href="https://threejs.org/" target="_blank">https://threejs.org/</a></p>
+<p>github&#xFF1A;<a href="https://github.com/mrdoob/three.js" target="_blank">https://github.com/mrdoob/three.js</a></p>
+<h3 id="2-three-&#x7684;&#x4F18;&#x7F3A;&#x70B9;">2-three &#x7684;&#x4F18;&#x7F3A;&#x70B9;</h3>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
 <ul>
-<li>3D&#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;&#xFF1A;<a href="https://cybermap.kaspersky.com/" target="_blank">https://cybermap.kaspersky.com/</a></li>
-<li>&#x5BB6;&#x5C45;&#x5356;&#x573A;&#xFF1A;<a href="https://showroom.littleworkshop.fr/" target="_blank">https://showroom.littleworkshop.fr/</a></li>
-<li>&#x5929;&#x732B;&#x5BA3;&#x4F20;&#x9875;&#xFF1A;<a href="https://shrek.imdevsh.com/show/tmall/" target="_blank">https://shrek.imdevsh.com/show/tmall/</a></li>
-<li>&#x6C7D;&#x8F66;&#x6A21;&#x578B;&#xFF1A;<a href="https://ezshine.gitee.io/www/showcase/smart3dh5/loader.html" target="_blank">https://ezshine.gitee.io/www/showcase/smart3dh5/loader.html</a></li>
-<li>&#x8DA3;&#x7A7A;&#x95F4;&#xFF1A;<a href="http://www.3dnest.cn/page/case/case0.html" target="_blank">http://www.3dnest.cn/page/case/case0.html</a></li>
+<li>&#x5BF9;WebGL &#x8FDB;&#x884C;&#x4E86;&#x6DF1;&#x5EA6;&#x5C01;&#x88C5;&#xFF0C;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x5E38;&#x89C1;&#x9879;&#x76EE;&#x7684;&#x5F00;&#x53D1;&#x901F;&#x5EA6;&#x3002;</li>
+<li>&#x5165;&#x95E8;&#x7B80;&#x5355;&#xFF0C;&#x7CBE;&#x901A;&#x8F83;&#x96BE;&#xFF0C;&#x9700;&#x56FE;&#x5F62;&#x5B66;&#x57FA;&#x7840;&#x3002;</li>
+<li>&#x5177;&#x5907;&#x8F83;&#x597D;&#x7684;&#x751F;&#x6001;&#x73AF;&#x5883;&#xFF0C;&#x6587;&#x6863;&#x8BE6;&#x7EC6;&#xFF0C;&#x6301;&#x7EED;&#x66F4;&#x65B0;&#xFF0C;&#x5728;&#x56FD;&#x5185;&#x7684;&#x4F7F;&#x7528;&#x8005;&#x5F88;&#x591A;&#xFF0C;&#x5C31;&#x4E1A;&#x9700;&#x6C42;&#x4E5F;&#x5F88;&#x5927;&#x3002;</li>
 </ul>
-<h3 id="3-&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5B66;&#x4E60;webgl-">3-&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5B66;&#x4E60;webgl ?</h3>
-<p>webgl &#x7684;&#x884C;&#x4E1A;&#x80CC;&#x666F;&#x51B3;&#x5B9A;&#x4E86;&#x5176;&#x5728;&#x5E02;&#x573A;&#x4E2D;&#x5177;&#x6709;&#x5E7F;&#x5927;&#x7684;&#x9700;&#x6C42;&#x91CF;&#x3002;</p>
-<p>webgl &#x53D1;&#x5C55;&#x6F5C;&#x529B;&#x5927;&#xFF0C;&#x4E0D;&#x50CF;&#x66FE;&#x7ECF;&#x7684;flash&#xFF0C;&#x5B66;&#x5B8C;&#x4E86;&#xFF0C;&#x8FD8;&#x4F1A;&#x9762;&#x4E34;&#x88AB;&#x6DD8;&#x6C70;&#x7684;&#x98CE;&#x9669;&#x3002;</p>
-<p>webgl &#x7684;&#x804C;&#x573A;&#x7ADE;&#x4E89;&#x529B;&#x8981;&#x6BD4;vue&#x3001;react&#x7B49;&#x4E3B;&#x6D41;&#x6846;&#x67B6;&#x5C0F;&#x3002;</p>
-<p>webgl&#x85AA;&#x8D44;&#x53EF;&#x89C2;&#xFF0C;&#x4E00;&#x822C;&#x53EA;&#x8981;&#x4F60;&#x7406;&#x89E3;webgl&#x539F;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x719F;&#x7EC3;&#x4F7F;&#x7528;three.js&#xFF0C;&#x4F1A;&#x7528;react&#xFF0C;&#x6708;&#x85AA;&#x53EF;&#x8FBE;25k+</p>
-<p>&#x4E0B;&#x9762;&#x662F;&#x6211;&#x5728;boss &#x76F4;&#x8058;&#x4E0A;&#x7684;&#x622A;&#x56FE;&#xFF1A;</p>
-<p><img src="images/image-20210117202622161.png" alt="image-20210117202622161"></p>
-<p>&#x7EFC;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;&#x5BF9;&#x516C;&#x53F8;&#x800C;&#x8A00;&#xFF0C;webgl &#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x4ED6;&#x4EEC;&#x5728;&#x4E09;&#x7EF4;&#x6A21;&#x578B;&#x7684;&#x663E;&#x793A;&#x548C;&#x4EA4;&#x4E92;&#x4E0A;&#x7684;&#x95EE;&#x9898;&#xFF1B;&#x5BF9;&#x5F00;&#x53D1;&#x8005;&#x800C;&#x8A00;&#xFF0C;webgl &#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x662F;&#x5B9E;&#x73B0;&#x66F4;&#x591A;&#x3001;&#x66F4;&#x70AB;&#x9177;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5373;&#x4F7F;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E50;&#x5728;&#x5176;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x8FD8;&#x4F1A;&#x6709;&#x4E00;&#x4EFD;&#x4E0D;&#x9519;&#x7684;&#x85AA;&#x8D44;&#x3002;</p>
-<h2 id="&#x7B2C;&#x4E8C;&#x7AE0;-webgl-&#x6700;&#x77ED;&#x6559;&#x7A0B;">&#x7B2C;&#x4E8C;&#x7AE0; webgl &#x6700;&#x77ED;&#x6559;&#x7A0B;</h2>
-<p>&#x63A5;&#x4E0B;&#x6765;&#x54B1;&#x4EEC;&#x8BF4;&#x4E00;&#x4E2A;&#x5728;webgl &#x753B;&#x5E03;&#x4E0A;&#x5237;&#x5E95;&#x8272;&#x7684;&#x7B80;&#x5355;&#x6817;&#x5B50;&#x3002;</p>
-<h3 id="1-&#x5237;&#x5E95;&#x8272;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;">1-&#x5237;&#x5E95;&#x8272;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;</h3>
-<p>1.&#x5728;html&#x4E2D;&#x5EFA;&#x7ACB;canvas &#x753B;&#x5E03;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;canvas&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<ul>
+<li><p>&#x5728;Node.js &#x4E2D;&#x5F15;&#x7528;&#x56F0;&#x96BE;&#x3002;&#x5728; Node.js v12 &#x4E2D;&#xFF0C; three.js &#x7684;&#x6838;&#x5FC3;&#x5E93;&#x53EF;&#x4F7F;&#x7528; require(&apos;three&apos;) &#x6765;&#x4F5C;&#x4E3A; CommonJS module &#x8FDB;&#x884C;&#x5BFC;&#x5165;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x5728; examples/jsm &#x4E2D;&#x7684;&#x793A;&#x4F8B;&#x7EC4;&#x4EF6;&#x5E76;&#x4E0D;&#x80FD;&#x591F;&#x8FD9;&#x6837;&#x3002;</p>
+</li>
+<li><p>&#x4E2A;&#x522B;&#x529F;&#x80FD;&#x5C01;&#x88C5;&#x8FC7;&#x7D27;&#xFF0C;&#x9650;&#x5236;&#x4E86;&#x5176;&#x7075;&#x6D3B;&#x6027;&#x3002;</p>
+</li>
+</ul>
+<h3 id="3-three-&#x9002;&#x5408;&#x505A;&#x4EC0;&#x4E48;">3-three &#x9002;&#x5408;&#x505A;&#x4EC0;&#x4E48;</h3>
+<p>three &#x9002;&#x5408;&#x4E09;&#x7EF4;&#x9879;&#x76EE;&#x7684;&#x5F00;&#x53D1;&#x548C;&#x5C55;&#x793A;&#xFF0C;&#x6BD4;&#x5982;VR&#x3001;AR&#x3001;&#x4E09;&#x7EF4;&#x4EA7;&#x54C1;&#x5C55;&#x793A;&#x3001;&#x4E09;&#x7EF4;&#x5BB6;&#x5C45;&#x8BBE;&#x8BA1;&#x2026;&#x2026;</p>
+<p>three &#x4E5F;&#x53EF;&#x4EE5;&#x505A;&#x6E38;&#x620F;&#x5F00;&#x53D1;&#xFF0C;&#x53EA;&#x662F;&#x76F8;&#x8F83;&#x4E8E;Babylon&#xFF0C;&#x7F3A;&#x5C11;&#x4E86;&#x7269;&#x7406;&#x5F15;&#x64CE;&#x3002;</p>
+<h2 id="&#x7B2C;&#x4E8C;&#x7AE0;-&#x725B;&#x5200;&#x5C0F;&#x8BD5;-&#x65CB;&#x8F6C;&#x7684;&#x7ACB;&#x65B9;&#x4F53;">&#x7B2C;&#x4E8C;&#x7AE0; &#x725B;&#x5200;&#x5C0F;&#x8BD5;-&#x65CB;&#x8F6C;&#x7684;&#x7ACB;&#x65B9;&#x4F53;</h2>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x8981;&#x642D;&#x5EFA;&#x4E00;&#x4E2A;&#x573A;&#x666F;&#xFF0C;&#x8FD9;&#x4E2A;&#x573A;&#x666F;&#x91CC;&#x9762;&#x6709;&#x4E00;&#x4E2A;&#x65CB;&#x8F6C;&#x7684;&#x7ACB;&#x65B9;&#x4F53;&#x3002;</p>
+<p><img src="images/1.gif" alt="1"></p>
+<p>1.&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;HTML&#x6587;&#x4EF6;&#xFF0C;&#x5F15;&#x5165;three &#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x725B;&#x5200;&#x5C0F;&#x8BD5;p<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+            <span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>; }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/three/build/three.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+            <span class="hljs-comment">// Our Javascript will go here.</span>
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<p>2.&#x5728;js&#x4E2D;&#x83B7;&#x53D6;canvas&#x753B;&#x5E03;</p>
-<pre><code class="lang-js">const canvas=document.getElementById(&apos;canvas&#x2019;);
-</code></pre>
-<p>3.&#x4F7F;&#x7528;canvas &#x83B7;&#x53D6;webgl &#x7ED8;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</p>
-<pre><code class="lang-js">const gl=canvas.getContext(&apos;webgl&#x2019;);
-</code></pre>
-<p>4.&#x6307;&#x5B9A;&#x5C06;&#x8981;&#x7528;&#x6765;&#x6E05;&#x7A7A;&#x7ED8;&#x56FE;&#x533A;&#x7684;&#x989C;&#x8272;</p>
-<pre><code class="lang-js">gl.clearColor(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>);
-</code></pre>
-<p>5.&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x6307;&#x5B9A;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x6E05;&#x7A7A;&#x7ED8;&#x56FE;&#x533A;</p>
-<pre><code class="lang-js">gl.clear(gl.COLOR_BUFFER_BIT);
-</code></pre>
-<p>&#x6574;&#x4F53;&#x4EE3;&#x7801;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;canvas&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-    <span class="hljs-keyword">const</span> canvas=<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;canvas&apos;</span>);
-    canvas.width=<span class="hljs-built_in">window</span>.innerWidth;
-    canvas.height=<span class="hljs-built_in">window</span>.innerHeight;
-    <span class="hljs-keyword">const</span> gl=canvas.getContext(<span class="hljs-string">&apos;webgl&apos;</span>);
-    gl.clearColor(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>);
-    gl.clear(gl.COLOR_BUFFER_BIT);
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-<p>clearColor(r,g,b,a) &#x4E2D;&#x7684;&#x53C2;&#x6570;&#x662F;&#x7EA2;&#x3001;&#x7EFF;&#x3001;&#x84DD;&#x3001;&#x900F;&#x660E;&#x5EA6;&#xFF0C;&#x5176;&#x5B9A;&#x4E49;&#x57DF;&#x662F;[0,1]</p>
-<h3 id="2-&#x7075;&#x6D3B;&#x64CD;&#x4F5C;webgl&#x4E2D;&#x7684;&#x989C;&#x8272;">2-&#x7075;&#x6D3B;&#x64CD;&#x4F5C;webgl&#x4E2D;&#x7684;&#x989C;&#x8272;</h3>
-<p>css &#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x201C;rgba(255,255,255,1)&#x201D; &#x989C;&#x8272;&#xFF0C;&#x5176;&#x4E2D;r&#x3001;g&#x3001;b&#x7684;&#x5B9A;&#x4E49;&#x57DF;&#x662F;[0,255]&#xFF0C;&#x8FD9;&#x91CC;&#x8981;&#x548C;webgl&#x91CC;&#x7684;&#x989C;&#x8272;&#x533A;&#x5206;&#x4E00;&#x4E0B;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x5C06;css&#x989C;&#x8272;&#x89E3;&#x6790;&#x4E3A;webgl &#x989C;&#x8272;&#x7684;&#x539F;&#x7406;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> rgbaCSS = <span class="hljs-string">&quot;rgba(255,0,0,1)&quot;</span>;
-<span class="hljs-keyword">const</span> reg = <span class="hljs-built_in">RegExp</span>(<span class="hljs-regexp">/\((.*)\)/</span>);
-<span class="hljs-keyword">const</span> rgbaStr = reg.exec(rgbaCSS)[<span class="hljs-number">1</span>];
-<span class="hljs-keyword">const</span> rgb = rgbaStr.split(<span class="hljs-string">&quot;,&quot;</span>).map((ele) =&gt; <span class="hljs-built_in">parseInt</span>(ele));
-<span class="hljs-keyword">const</span> r = rgb[<span class="hljs-number">0</span>] / <span class="hljs-number">255</span>;
-<span class="hljs-keyword">const</span> g = rgb[<span class="hljs-number">1</span>] / <span class="hljs-number">255</span>;
-<span class="hljs-keyword">const</span> b = rgb[<span class="hljs-number">2</span>] / <span class="hljs-number">255</span>;
-<span class="hljs-keyword">const</span> a = rgb[<span class="hljs-number">3</span>];
+<p>2.&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x573A;&#x666F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> scene = <span class="hljs-keyword">new</span> THREE.Scene();
+<span class="hljs-keyword">const</span> camera = <span class="hljs-keyword">new</span> THREE.PerspectiveCamera( <span class="hljs-number">75</span>, <span class="hljs-built_in">window</span>.innerWidth / <span class="hljs-built_in">window</span>.innerHeight, <span class="hljs-number">0.1</span>, <span class="hljs-number">1000</span> );
 
-gl.clearColor(r, g, b, a);
-gl.clear(gl.COLOR_BUFFER_BIT);
+<span class="hljs-keyword">const</span> renderer = <span class="hljs-keyword">new</span> THREE.WebGLRenderer();
+renderer.setSize( <span class="hljs-built_in">window</span>.innerWidth, <span class="hljs-built_in">window</span>.innerHeight );
+<span class="hljs-built_in">document</span>.body.appendChild( renderer.domElement );
 </code></pre>
-<p>&#x5728;three.js &#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5B8C;&#x7F8E;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;-Color&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x7684;&#x63A7;&#x5236;&#x989C;&#x8272;&#x3002;</p>
-<h3 id="&#x6848;&#x4F8B;-&#x591A;&#x59FF;&#x591A;&#x5F69;&#x7684;&#x753B;&#x5E03;">&#x6848;&#x4F8B;-&#x591A;&#x59FF;&#x591A;&#x5F69;&#x7684;&#x753B;&#x5E03;</h3>
-<p>1.&#x5F15;&#x5165;Color &#x5BF9;&#x8C61;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Color } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;https://unpkg.com/three/build/three.module.js&quot;</span>;
-</code></pre>
-<p>&#x6211;&#x8FD9;&#x662F;&#x901A;&#x8FC7;CDN &#x5F15;&#x5165;&#x7684;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x4E0D;&#x9002;&#x7528;&#x4E8E;nodejs&#xFF0C;&#x56E0;&#x4E3A;nodejs &#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x8DEF;&#x5F84;&#x8BF7;&#x6C42;&#x8D44;&#x6E90;&#x3002;</p>
-<p>2.&#x5B9E;&#x4F8B;&#x5316;Color &#x5BF9;&#x8C61;</p>
-<pre><code>const color = new Color(1, 0, 0);
-</code></pre><p>3.&#x5EFA;&#x7ACB;&#x8272;&#x76F8;&#x504F;&#x79FB;&#x52A8;&#x753B;</p>
-<pre><code class="lang-js">!(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ani</span>(<span class="hljs-params"></span>) </span>{
-    color.offsetHSL(<span class="hljs-number">0.005</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
-    gl.clearColor(color.r, color.g, color.b, <span class="hljs-number">1</span>);
-    gl.clear(gl.COLOR_BUFFER_BIT);
-    requestAnimationFrame(ani);
-})();
-</code></pre>
-<p>&#x5173;&#x4E8E;&#x989C;&#x8272;&#x7684;&#x64CD;&#x4F5C;&#x6211;&#x4EEC;&#x5C31;&#x8BF4;&#x5230;&#x8FD9;&#xFF0C;Color &#x5BF9;&#x8C61;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5176;&#x5B83;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;threejs&#x5B98;&#x7F51;&#x67E5;&#x770B;&#x3002;</p>
-<h3 id="3-webgl-&#x5750;&#x6807;&#x7CFB;">3-webgl &#x5750;&#x6807;&#x7CFB;</h3>
-<p>webgl&#x753B;&#x5E03;&#x7684;&#x5EFA;&#x7ACB;&#x548C;&#x83B7;&#x53D6;&#xFF0C;&#x548C;canvas 2d&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
-<p>&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x4F7F;&#x7528;canvas.getContext()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x4E86;webgl &#x7C7B;&#x578B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x8FD9;&#x5F20;&#x753B;&#x5E03;&#x5C31;&#x4E0D;&#x518D;&#x662F;&#x4EE5;&#x524D;&#x7684;canvas 2d &#x753B;&#x5E03;&#x3002;</p>
-<p>&#x5F53;&#x7136;&#xFF0C;&#x5B83;&#x4E5F;&#x4E0D;&#x4F1A;&#x53D8;&#x6210;&#x4E09;&#x7EF4;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x7684;&#x7535;&#x8111;&#x5C4F;&#x5E55;&#x59CB;&#x7EC8;&#x662F;&#x5E73;&#x7684;&#x3002;</p>
-<p>&#x90A3;&#x8FD9;&#x5F20;&#x753B;&#x5E03;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x4E00;&#x6837;&#x4E86;&#x5462;&#xFF1F;</p>
-<p>&#x5B83;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x53D8;&#x4E86;&#x3002;</p>
-<p>canvas 2d &#x753B;&#x5E03;&#x548C;webgl &#x753B;&#x5E03;&#x4F7F;&#x7528;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x90FD;&#x662F;&#x4E8C;&#x7EF4;&#x76F4;&#x89D2;&#x5750;&#x6807;&#x7CFB;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5B83;&#x4EEC;&#x5750;&#x6807;&#x539F;&#x70B9;&#x3001;y &#x8F74;&#x7684;&#x5750;&#x6807;&#x65B9;&#x5411;&#xFF0C;&#x5750;&#x6807;&#x57FA;&#x5E95;&#x90FD;&#x4E0D;&#x4E00;&#x6837;&#x4E86;&#x3002;</p>
-<h4 id="3-1-canvas-2d&#x753B;&#x5E03;&#x7684;&#x5750;&#x6807;&#x7CFB;">3-1-canvas 2d&#x753B;&#x5E03;&#x7684;&#x5750;&#x6807;&#x7CFB;</h4>
-<p>canvas 2d &#x5750;&#x6807;&#x7CFB;&#x7684;&#x539F;&#x70B9;&#x5728;&#x5DE6;&#x4E0A;&#x89D2;&#x3002;</p>
-<p>canvas 2d &#x5750;&#x6807;&#x7CFB;&#x7684;y &#x8F74;&#x65B9;&#x5411;&#x662F;&#x671D;&#x4E0B;&#x7684;&#x3002;</p>
-<p>canvas 2d &#x5750;&#x6807;&#x7CFB;&#x7684;&#x5750;&#x6807;&#x57FA;&#x5E95;&#x6709;&#x4E24;&#x4E2A;&#x5206;&#x91CF;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;&#x7684;&#x5BBD;&#x548C;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;&#x7684;&#x9AD8;&#xFF0C;&#x5373;1&#x4E2A;&#x5355;&#x4F4D;&#x7684;&#x5BBD;&#x4FBF;&#x662F;1&#x4E2A;&#x50CF;&#x7D20;&#x7684;&#x5BBD;&#xFF0C;1&#x4E2A;&#x5355;&#x4F4D;&#x7684;&#x9AD8;&#x4FBF;&#x662F;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;&#x7684;&#x9AD8;&#x3002;</p>
-<p>&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x4E0B;&#x56FE;&#x4E24;&#x4E2A;&#x65B9;&#x5757;&#x8868;&#x793A;&#x4E24;&#x4E2A;&#x50CF;&#x7D20;&#xFF1A;</p>
-<p><img src="images/image-20200910145149750.png" alt="image-20200910145149750"></p>
-<h4 id="3-2-webgl&#x7684;&#x5750;&#x6807;&#x7CFB;">3-2-webgl&#x7684;&#x5750;&#x6807;&#x7CFB;</h4>
-<p>webgl&#x5750;&#x6807;&#x7CFB;&#x7684;&#x5750;&#x6807;&#x539F;&#x70B9;&#x5728;&#x753B;&#x5E03;&#x4E2D;&#x5FC3;&#x3002;</p>
-<p>webgl&#x5750;&#x6807;&#x7CFB;&#x7684;y &#x8F74;&#x65B9;&#x5411;&#x662F;&#x671D;&#x4E0A;&#x7684;&#x3002;</p>
-<p>webgl&#x5750;&#x6807;&#x57FA;&#x5E95;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x5206;&#x91CF;&#x5206;&#x522B;&#x662F;&#x534A;&#x4E2A;canvas&#x7684;&#x5BBD;&#x548C;canvas&#x7684;&#x9AD8;&#xFF0C;&#x5373;1&#x4E2A;&#x5355;&#x4F4D;&#x7684;&#x5BBD;&#x4FBF;&#x662F;&#x534A;&#x4E2A;&#x4E2A;canvas&#x7684;&#x5BBD;&#xFF0C;1&#x4E2A;&#x5355;&#x4F4D;&#x7684;&#x9AD8;&#x4FBF;&#x662F;&#x534A;&#x4E2A;canvas&#x7684;&#x9AD8;&#x3002;</p>
-<p>&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
-<p><img src="images/image-20210124233132935.png" alt="image-20210124233132935"></p>
-<h2 id="&#x7B2C;&#x4E09;&#x7AE0;-webgl-&#x6700;&#x7B80;&#x5355;&#x7684;&#x56FE;&#x5F62;-&#x753B;&#x4E00;&#x4E2A;&#x70B9;">&#x7B2C;&#x4E09;&#x7AE0; webgl &#x6700;&#x7B80;&#x5355;&#x7684;&#x56FE;&#x5F62;-&#x753B;&#x4E00;&#x4E2A;&#x70B9;</h2>
-<p>&#x70B9;&#x662F;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5F62;&#x72B6;&#xFF0C;&#x662F;&#x51E0;&#x4F55;&#x56FE;&#x5F62;&#x6700;&#x57FA;&#x672C;&#x7684;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x54B1;&#x4EEC;&#x5C31;&#x8BF4;&#x4E00;&#x4E0B;&#x5728;webgl &#x753B;&#x5E03;&#x4E0A;&#x5982;&#x4F55;&#x753B;&#x4E00;&#x4E2A;&#x70B9;&#x3002;</p>
-<p>&#x9996;&#x5148;&#x54B1;&#x4EEC;&#x5148;&#x8BF4;&#x4E00;&#x4E0B;&#x7ED8;&#x56FE;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;&#x3002;</p>
-<h3 id="1-&#x7ED8;&#x56FE;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;">1-&#x7ED8;&#x56FE;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;</h3>
-<ol>
-<li><p>&#x627E;&#x4E00;&#x5F20;&#x753B;&#x5E03;&#x3002;</p>
-</li>
-<li><p>&#x627E;&#x4E00;&#x652F;&#x753B;&#x7B14;&#x3002;</p>
-</li>
-<li><p>&#x5F00;&#x59CB;&#x753B;&#x753B;&#x3002;</p>
-</li>
-</ol>
-<p>   <img src="images/image-20200911102913066.png" alt="image-20200911102913066"></p>
-<p>&#x8FD9;&#x4E09;&#x6B65;&#x662F;&#x4ECE;&#x73B0;&#x5B9E;&#x751F;&#x6D3B;&#x4E2D;&#x62BD;&#x79BB;&#x51FA;&#x6765;&#x7684;&#x666E;&#x904D;&#x89C4;&#x5F8B;&#xFF0C;&#x8FD9;&#x5728;&#x54EA;&#x91CC;&#x90FD;&#x662F;&#x9002;&#x7528;&#x7684;&#x3002;</p>
-<p>canvas 2d &#x7684;&#x7ED8;&#x56FE;&#x903B;&#x8F91;&#x5C31;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x3002;&#x9996;&#x5148;&#x8981;&#x6709;canvas &#x753B;&#x5E03;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;canvas &#x753B;&#x5E03;&#x7684;getContext(&apos;2d&apos;) &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x4E00;&#x652F;&#x4E8C;&#x7EF4;&#x753B;&#x7B14;&#xFF0C;&#x7136;&#x540E;&#x76F4;&#x63A5;&#x5728;&#x753B;&#x5E03;&#x4E0A;&#x753B;&#x753B;&#x3002;&#x5C31;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-comment">//canvas&#x753B;&#x5E03;</span>
-<span class="hljs-keyword">const</span> canvas=<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;canvas&apos;</span>);
-<span class="hljs-comment">//&#x4E8C;&#x7EF4;&#x753B;&#x7B14;</span>
-<span class="hljs-keyword">const</span> ctx=canvas.getContext(<span class="hljs-string">&apos;2d&apos;</span>);
-<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x753B;&#x7B14;&#x7684;&#x989C;&#x8272;</span>
-ctx.fillStyle=<span class="hljs-string">&apos;red&apos;</span>;
-<span class="hljs-comment">//&#x7528;&#x753B;&#x7B14;&#x753B;&#x4E00;&#x4E2A;&#x77E9;&#x5F62;</span>
-ctx.fillRect(<span class="hljs-number">20</span>,<span class="hljs-number">20</span>,<span class="hljs-number">300</span>,<span class="hljs-number">200</span>);
-</code></pre>
-<p>webgl &#x7684;&#x7ED8;&#x56FE;&#x903B;&#x8F91;&#x4EA6;&#x662F;&#x5982;&#x6B64;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5B83;&#x66F4;&#x50CF;&#x7535;&#x8111;&#x7ED8;&#x753B;&#xFF0C;&#x5176;&#x7ED8;&#x753B;&#x7684;&#x6B65;&#x9AA4;&#x91CC;&#x8FD8;&#x591A;&#x4E86;&#x4E00;&#x5C42;&#x4ECB;&#x8D28;&#x3002;</p>
-<p>&#x8FD9;&#x5C42;&#x4ECB;&#x8D28;&#x5C31;&#x662F;&#x624B;&#x7ED8;&#x677F;&#xFF0C;&#x5C31;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
-<ol>
-<li>&#x627E;&#x4E00;&#x53F0;&#x7535;&#x8111;&#x3002;</li>
-<li>&#x627E;&#x4E00;&#x5757;&#x624B;&#x7ED8;&#x677F;&#x3002;</li>
-<li>&#x627E;&#x4E00;&#x652F;&#x89E6;&#x63A7;&#x7B14;&#x3002;</li>
-<li>&#x5F00;&#x59CB;&#x753B;&#x753B;&#x3002;</li>
-</ol>
-<p><img src="images/image-20200911104454279.png" alt="image-20200911104454279"></p>
-<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x54B1;&#x4EEC;&#x5C31;&#x8BE6;&#x7EC6;&#x8BF4;&#x4E00;&#x4E0B;canvas 2d &#x753B;&#x56FE;&#x548C;webgl &#x753B;&#x56FE;&#x7684;&#x5DEE;&#x5F02;&#x3002;</p>
-<h3 id="2-canvas-2d&#x548C;webgl&#x7ED8;&#x56FE;&#x7684;&#x5DEE;&#x5F02;">2-canvas 2d&#x548C;webgl&#x7ED8;&#x56FE;&#x7684;&#x5DEE;&#x5F02;</h3>
-<p>&#x5728;webgl&#x91CC;&#x7ED8;&#x56FE;&#xFF0C;&#x6216;&#x8BB8;&#x4F60;&#x4F1A;&#x89C9;&#x5F97;&#x4E5F;&#x53EF;&#x4EE5;&#x50CF;canvas 2d&#x90A3;&#x6837;&#xFF0C;&#x5C31;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x5199;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-comment">//canvas&#x753B;&#x5E03;</span>
-<span class="hljs-keyword">const</span> canvas=<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;canvas&apos;</span>);
-<span class="hljs-comment">//&#x4E09;&#x7EF4;&#x753B;&#x7B14;</span>
-<span class="hljs-keyword">const</span> ctx=canvas.getContext(<span class="hljs-string">&apos;webgl&apos;</span>);
-<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x753B;&#x7B14;&#x7684;&#x989C;&#x8272;</span>
-ctx.fillStyle=<span class="hljs-string">&apos;red&apos;</span>;
-<span class="hljs-comment">//&#x7528;&#x753B;&#x7B14;&#x753B;&#x4E00;&#x4E2A;&#x7ACB;&#x65B9;&#x4F53;</span>
-ctx.fillBox(<span class="hljs-number">20</span>,<span class="hljs-number">20</span>,<span class="hljs-number">300</span>,<span class="hljs-number">200</span>);
-</code></pre>
-<p>&#x7136;&#x800C;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;webgl &#x7684;&#x7ED8;&#x56FE;&#x903B;&#x8F91;&#x548C;canvas 2d &#x7684;&#x7ED8;&#x56FE;&#x903B;&#x8F91;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x672C;&#x8D28;&#x7684;&#x5DEE;&#x522B;&#x3002;</p>
-<p>&#x5927;&#x5BB6;&#x5728;&#x5B66;&#x4E60;html &#x7684;&#x65F6;&#x5019;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x6709;&#x4E09;&#x5927;&#x7EBF;&#x7A0B;&#xFF1A; js &#x5F15;&#x64CE;&#x7EBF;&#x7A0B;&#x3001;GUI &#x6E32;&#x67D3;&#x7EBF;&#x7A0B;&#x3001;&#x6D4F;&#x89C8;&#x5668;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x7EBF;&#x7A0B;&#x3002;</p>
-<p>&#x5176;&#x4E2D;GUI &#x6E32;&#x67D3;&#x7EBF;&#x7A0B;&#x5C31;&#x662F;&#x7528;&#x4E8E;&#x6E32;&#x56FE;&#x7684;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x6E32;&#x67D3;&#x7EBF;&#x7A0B;&#x91CC;&#xFF0C;&#x6709;&#x8D1F;&#x8D23;&#x4E0D;&#x540C;&#x6E32;&#x67D3;&#x5DE5;&#x4F5C;&#x7684;&#x5DE5;&#x4EBA;&#x3002;&#x6BD4;&#x5982;&#x6709;&#x8D1F;&#x8D23;&#x6E32;&#x67D3;HTML+css&#x7684;&#x5DE5;&#x4EBA;&#xFF0C;&#x6709;&#x8D1F;&#x8D23;&#x6E32;&#x67D3;&#x4E8C;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#x5DE5;&#x4EBA;&#xFF0C;&#x6709;&#x8D1F;&#x8D23;&#x6E32;&#x67D3;&#x4E09;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#x5DE5;&#x4EBA;&#x3002;</p>
-<p>&#x6E32;&#x67D3;&#x4E8C;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#x5DE5;&#x4EBA;&#x548C;&#x6E32;&#x67D3;&#x4E09;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#x5DE5;&#x4EBA;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x56FD;&#x5BB6;&#x7684;&#xFF0C;&#x4ED6;&#x4EEC;&#x8BF4;&#x7684;&#x8BED;&#x8A00;&#x4E0D;&#x4E00;&#x6837;&#x3002;</p>
-<p>&#x6E32;&#x67D3;&#x4E8C;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#x5DE5;&#x4EBA;&#x8BF4;&#x7684;&#x662F;js&#x8BED;&#x8A00;&#x3002;</p>
-<p>&#x6E32;&#x67D3;&#x4E09;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#x5DE5;&#x4EBA;&#x8BF4;&#x7684;&#x662F;GLSL ES &#x8BED;&#x8A00;&#x3002;</p>
-<p>&#x800C;&#x6211;&#x4EEC;&#x5728;&#x505A;web&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3001;&#x4EA4;&#x4E92;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x7528;js &#x5199;&#x7684;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x5728;&#x7528;js &#x7ED8;&#x5236;canvas 2d &#x56FE;&#x5F62;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6E32;&#x67D3;&#x4E8C;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#x5DE5;&#x4EBA;&#x8BA4;&#x8BC6;js &#x8BED;&#x8A00;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6E32;&#x56FE;&#x3002;</p>
-<p>&#x4F46;&#x6211;&#x4EEC;&#x5728;&#x7528;js &#x7ED8;&#x5236;webgl&#x56FE;&#x5F62;&#x65F6;&#xFF0C;&#x6E32;&#x67D3;&#x4E09;&#x7EF4;&#x56FE;&#x5F62;&#x7684;&#x5DE5;&#x4EBA;&#x5C31;&#x4E0D;&#x8BA4;&#x8BC6;&#x8FD9;&#x4E2A;js &#x8BED;&#x8A00;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x53EA;&#x8BA4;&#x8BC6;GLSL ES &#x8BED;&#x8A00;&#x3002;</p>
-<p>&#x56E0;&#x6B64;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x627E;&#x4EBA;&#x7FFB;&#x8BD1;&#x7FFB;&#x8BD1;&#x3002;</p>
-<p>&#x8FD9;&#x4E2A;&#x505A;&#x7FFB;&#x8BD1;&#x7684;&#x4EBA;&#x662F;&#x8C01;&#x5462;&#xFF0C;&#x5B83;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x63D0;&#x5230;&#x8FC7;&#x7684;&#x624B;&#x7ED8;&#x677F;&#xFF0C;&#x5B83;&#x5728;webgl &#x91CC;&#x53EB;&#x201C;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#x201D;&#x3002;</p>
-<p>&#x63A5;&#x4E0B;&#x6765;&#x54B1;&#x4EEC;&#x4ECE;&#x624B;&#x7ED8;&#x677F;&#x7684;&#x7ED8;&#x56FE;&#x6B65;&#x9AA4;&#x4E2D;&#x634B;&#x4E00;&#x4E0B;webgl &#x7684;&#x7ED8;&#x56FE;&#x601D;&#x8DEF;&#x3002;</p>
-<h3 id="3-webgl-&#x7684;&#x7ED8;&#x56FE;&#x601D;&#x8DEF;">3-webgl &#x7684;&#x7ED8;&#x56FE;&#x601D;&#x8DEF;</h3>
-<ol>
-<li>&#x627E;&#x4E00;&#x53F0;&#x7535;&#x8111; - &#x6D4F;&#x89C8;&#x5668;&#x91CC;&#x5185;&#x7F6E;&#x7684;webgl &#x6E32;&#x67D3;&#x5F15;&#x64CE;&#xFF0C;&#x8D1F;&#x8D23;&#x6E32;&#x67D3;webgl &#x56FE;&#x5F62;&#xFF0C;&#x53EA;&#x8BA4;GLSL ES&#x8BED;&#x8A00;&#x3002;</li>
-<li>&#x627E;&#x4E00;&#x5757;&#x624B;&#x7ED8;&#x677F; - &#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#xFF0C;&#x627F;&#x8F7D;GLSL ES&#x8BED;&#x8A00;&#xFF0C;&#x7FFB;&#x8BD1;GLSL ES&#x8BED;&#x8A00;&#x548C;js&#x8BED;&#x8A00;&#xFF0C;&#x4F7F;&#x4E24;&#x8005;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x901A;&#x4FE1;&#x3002;</li>
-<li>&#x627E;&#x4E00;&#x652F;&#x89E6;&#x63A7;&#x7B14; - &#x901A;&#x8FC7;canvas &#x83B7;&#x53D6;&#x7684;webgl &#x7C7B;&#x578B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x5411;&#x624B;&#x7ED8;&#x677F;&#x4F20;&#x9012;&#x7ED8;&#x56FE;&#x547D;&#x4EE4;&#xFF0C;&#x5E76;&#x63A5;&#x6536;&#x624B;&#x7ED8;&#x677F;&#x7684;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x3002;</li>
-<li>&#x5F00;&#x59CB;&#x753B;&#x753B; - &#x901A;&#x8FC7;webgl &#x7C7B;&#x578B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#xFF0C;&#x7528;js &#x753B;&#x753B;&#x3002;</li>
-</ol>
-<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x601D;&#x8DEF;&#x4E2D;&#xFF0C;&#x5927;&#x5BB6;&#x5BF9;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x540D;&#x8BCD;&#x53EF;&#x80FD;&#x8FD8;&#x6CA1;&#x6709;&#x592A;&#x6DF1;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6BD4;&#x5982;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x54B1;&#x4EEC;&#x5C31;&#x8BE6;&#x7EC6;&#x8BF4;&#x4E00;&#x4E0B;webgl &#x5B9E;&#x9645;&#x7684;&#x7ED8;&#x56FE;&#x6B65;&#x9AA4;&#x3002;</p>
-<h3 id="4-webgl-&#x7684;&#x7ED8;&#x56FE;&#x6B65;&#x9AA4;">4-webgl &#x7684;&#x7ED8;&#x56FE;&#x6B65;&#x9AA4;</h3>
-<p>1.&#x5728;html&#x4E2D;&#x5EFA;&#x7ACB;canvas &#x753B;&#x5E03;</p>
-<pre><code class="lang-js">&lt;canvas id=<span class="hljs-string">&quot;canvas&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span></span>
-</code></pre>
-<p>2.&#x5728;js&#x4E2D;&#x83B7;&#x53D6;canvas&#x753B;&#x5E03;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> canvas=<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;canvas&apos;</span>);
-</code></pre>
-<p>3.&#x4F7F;&#x7528;canvas &#x83B7;&#x53D6;webgl &#x7ED8;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> gl=canvas.getContext(<span class="hljs-string">&apos;webgl&apos;</span>);
-</code></pre>
-<p>4.&#x5728;script&#x4E2D;&#x5EFA;&#x7ACB;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x548C;&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;&#xFF0C;glsl es</p>
-<pre><code class="lang-html">//&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;vertexShader&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;x-shader/x-vertex&quot;</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">void</span> main() {
-        gl_Position = vec4(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>);
-        gl_PointSize = <span class="hljs-number">100.0</span>;
-    }
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-//&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fragmentShader&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;x-shader/x-fragment&quot;</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">void</span> main() {
-        gl_FragColor = vec4(<span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>);
-    }
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-<p>5.&#x5728;js&#x4E2D;&#x83B7;&#x53D6;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x548C;&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;&#x7684;&#x6587;&#x672C;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> vsSource = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;vertexShader&apos;</span>).innerText;
-<span class="hljs-keyword">const</span> fsSource = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;fragmentShader&apos;</span>).innerText;
-</code></pre>
-<p>6.&#x521D;&#x59CB;&#x5316;&#x7740;&#x8272;&#x5668;</p>
-<pre><code class="lang-js">initShaders(gl, vsSource, fsSource);
-</code></pre>
-<p>7.&#x6307;&#x5B9A;&#x5C06;&#x8981;&#x7528;&#x6765;&#x6E05;&#x7A7A;&#x7ED8;&#x56FE;&#x533A;&#x7684;&#x989C;&#x8272;</p>
-<pre><code class="lang-js">gl.clearColor(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>);
-</code></pre>
-<p>8.&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x6307;&#x5B9A;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x6E05;&#x7A7A;&#x7ED8;&#x56FE;&#x533A;</p>
-<pre><code class="lang-js">gl.clear(gl.COLOR_BUFFER_BIT);
-</code></pre>
-<p>9.&#x7ED8;&#x5236;&#x9876;&#x70B9;</p>
-<pre><code class="lang-js">gl.drawArrays(gl.POINTS, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
-</code></pre>
-<p>&#x6574;&#x4F53;&#x4EE3;&#x7801;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;canvas&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
-<span class="hljs-comment">&lt;!-- &#x9876;&#x70B9;&#x7740;&#x8272;&#x5668; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;vertexShader&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;x-shader/x-vertex&quot;</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">void</span> main() {
-        gl_Position = vec4(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>);
-        gl_PointSize = <span class="hljs-number">100.0</span>;
-    }
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-comment">&lt;!-- &#x7247;&#x5143;&#x7740;&#x8272;&#x5668; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fragmentShader&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;x-shader/x-fragment&quot;</span>&gt;</span><span class="actionscript">
-    <span class="hljs-keyword">void</span> main() {
-        gl_FragColor = vec4(<span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>);
-    }
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-    <span class="hljs-comment">// canvas &#x753B;&#x5E03;</span>
-    <span class="hljs-keyword">const</span> canvas = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;canvas&apos;</span>);
-    canvas.width=<span class="hljs-built_in">window</span>.innerWidth;
-    canvas.height=<span class="hljs-built_in">window</span>.innerHeight;
-    <span class="hljs-comment">// webgl&#x753B;&#x7B14;</span>
-    <span class="hljs-keyword">const</span> gl = canvas.getContext(<span class="hljs-string">&apos;webgl&apos;</span>);
-    <span class="hljs-comment">// &#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;</span>
-    <span class="hljs-keyword">const</span> vsSource = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;vertexShader&apos;</span>).innerText;
-    <span class="hljs-comment">// &#x7247;&#x5143;&#x7740;&#x8272;&#x5668;</span>
-    <span class="hljs-keyword">const</span> fsSource = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;fragmentShader&apos;</span>).innerText;
-    <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x7740;&#x8272;&#x5668;</span>
-    initShaders(gl, vsSource, fsSource);
-    <span class="hljs-comment">// &#x6307;&#x5B9A;&#x5C06;&#x8981;&#x7528;&#x6765;&#x6E05;&#x7406;&#x7ED8;&#x56FE;&#x533A;&#x7684;&#x989C;&#x8272;</span>
-    gl.clearColor(<span class="hljs-number">0.</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>);
-    <span class="hljs-comment">// &#x6E05;&#x7406;&#x7ED8;&#x56FE;&#x533A;</span>
-    gl.clear(gl.COLOR_BUFFER_BIT);
-    <span class="hljs-comment">// &#x7ED8;&#x5236;&#x9876;&#x70B9;</span>
-    gl.drawArrays(gl.POINTS, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
+<p>&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5EFA;&#x7ACB;&#x4E86;&#x573A;&#x666F;&#x3001;&#x76F8;&#x673A;&#x548C;&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x5BF9;&#x4E8E;&#x5176;&#x4E2D;&#x53C2;&#x6570;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x53EF;&#x4EE5;&#x53BB;<a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene" target="_blank">&#x5B98;&#x7F51;</a>&#x67E5;&#x9605;&#x6587;&#x6863;&#x3002;</p>
+<p>3.&#x521B;&#x5EFA;&#x7ACB;&#x65B9;&#x4F53;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> geometry = <span class="hljs-keyword">new</span> THREE.BoxGeometry();
+<span class="hljs-keyword">const</span> material = <span class="hljs-keyword">new</span> THREE.MeshNormalMaterial();
+<span class="hljs-keyword">const</span> cube = <span class="hljs-keyword">new</span> THREE.Mesh(geometry, material);
+scene.add(cube);
 
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">initShaders</span>(<span class="hljs-params">gl,vsSource,fsSource</span>)</span>{
-        <span class="hljs-comment">//&#x521B;&#x5EFA;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;</span>
-        <span class="hljs-keyword">const</span> program = gl.createProgram();
-        <span class="hljs-comment">//&#x5EFA;&#x7ACB;&#x7740;&#x8272;&#x5BF9;&#x8C61;</span>
-        <span class="hljs-keyword">const</span> vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource);
-        <span class="hljs-keyword">const</span> fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
-        <span class="hljs-comment">//&#x628A;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5BF9;&#x8C61;&#x88C5;&#x8FDB;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#x4E2D;</span>
-        gl.attachShader(program, vertexShader);
-        <span class="hljs-comment">//&#x628A;&#x7247;&#x5143;&#x7740;&#x8272;&#x5BF9;&#x8C61;&#x88C5;&#x8FDB;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#x4E2D;</span>
-        gl.attachShader(program, fragmentShader);
-        <span class="hljs-comment">//&#x8FDE;&#x63A5;webgl&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#x548C;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;</span>
-        gl.linkProgram(program);
-        <span class="hljs-comment">//&#x542F;&#x52A8;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;</span>
-        gl.useProgram(program);
-        <span class="hljs-comment">//&#x5C06;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#x6302;&#x5230;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#x4E0A;</span>
-        gl.program = program;
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
-    }
+camera.position.z = <span class="hljs-number">5</span>;
+</code></pre>
+<p>4.&#x5728;&#x8FDE;&#x7EED;&#x6E32;&#x67D3;&#x65B9;&#x6CD5;&#x91CC;&#x65CB;&#x8F6C;&#x7ACB;&#x65B9;&#x4F53;&#x3002;</p>
+<pre><code class="lang-js">animate()
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">animate</span>(<span class="hljs-params"></span>) </span>{
+  requestAnimationFrame( animate );
 
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadShader</span>(<span class="hljs-params">gl, type, source</span>) </span>{
-        <span class="hljs-comment">//&#x6839;&#x636E;&#x7740;&#x8272;&#x7C7B;&#x578B;&#xFF0C;&#x5EFA;&#x7ACB;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;</span>
-        <span class="hljs-keyword">const</span> shader = gl.createShader(type);
-        <span class="hljs-comment">//&#x5C06;&#x7740;&#x8272;&#x5668;&#x6E90;&#x6587;&#x4EF6;&#x4F20;&#x5165;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;&#x4E2D;</span>
-        gl.shaderSource(shader, source);
-        <span class="hljs-comment">//&#x7F16;&#x8BD1;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;</span>
-        gl.compileShader(shader);
-        <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;</span>
-        <span class="hljs-keyword">return</span> shader;
-    }
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  cube.rotation.x += <span class="hljs-number">0.01</span>;
+  cube.rotation.y += <span class="hljs-number">0.01</span>;
+
+  renderer.render( scene, camera );
+};
 </code></pre>
-<p>&#x5BF9;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x6B65;&#x9AA4;1&#x3001;2&#x3001;3&#xFF0C;&#x5927;&#x5BB6;&#x5E94;&#x8BE5;&#x90FD;&#x6BD4;&#x8F83;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x54B1;&#x4EEC;&#x8BE6;&#x7EC6;&#x8BF4;&#x4E00;&#x4E0B;&#x7B2C;4 &#x6B65;&#xFF0C;&#x5728;script &#x91CC;&#x7528;GLSL ES&#x8BED;&#x8A00;&#x5199;&#x7740;&#x8272;&#x5668;&#x3002;</p>
-<h3 id="5-&#x7740;&#x8272;&#x5668;">5-&#x7740;&#x8272;&#x5668;</h3>
-<h4 id="5-1-&#x7740;&#x8272;&#x5668;&#x7684;&#x6982;&#x5FF5;">5-1-&#x7740;&#x8272;&#x5668;&#x7684;&#x6982;&#x5FF5;</h4>
-<p>webgl &#x7ED8;&#x56FE;&#x9700;&#x8981;&#x4E24;&#x79CD;&#x7740;&#x8272;&#x5668;&#xFF1A;</p>
+<p>&#x795D;&#x8D3A;&#x4F60;&#xFF01;&#x4F60;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x4E86;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;Three.js&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x867D;&#x7136;&#x5B83;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x4F46;&#x73B0;&#x5728;&#x4F60;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x5165;&#x95E8;&#x7684;&#x8D77;&#x70B9;&#x3002; </p>
+<h2 id="&#x7B2C;&#x4E09;&#x7AE0;-&#x7528;webpackts-&#x5F00;&#x53D1;three-&#x9879;&#x76EE;">&#x7B2C;&#x4E09;&#x7AE0; &#x7528;webpack+ts &#x5F00;&#x53D1;three &#x9879;&#x76EE;</h2>
+<p>&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x8BF4;webgl&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x662F;&#x4EE5;&#x592F;&#x5B9E;&#x57FA;&#x7840;&#x4E3A;&#x76EE;&#x7684;&#x3002;</p>
+<p>&#x800C;&#x73B0;&#x5728;&#x7684;three&#xFF0C;&#x6211;&#x4F1A;&#x9010;&#x6B65;&#x5F80;&#x5B9E;&#x6218;&#x9760;&#x62E2;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;webpack &#x4F9D;&#x65E7;&#x662F;&#x4E3B;&#x6D41;&#x7684;&#x6A21;&#x5757;&#x6253;&#x5305;&#x5DE5;&#x5177;&#xFF0C;&#x8FD9;&#x5728;&#x5927;&#x90E8;&#x5206;&#x516C;&#x53F8;&#x7684;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x4E2D;&#x662F;&#x5FC5;&#x4E0D;&#x53EF;&#x5C11;&#x7684;&#x3002;</p>
+<p>ts&#x548C;three &#x662F;&#x7EDD;&#x914D;&#xFF0C;three&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x7528;ts&#x5199;&#x7684;&#xFF0C;ts&#x53EF;&#x4EE5;&#x4E3A;three &#x9879;&#x76EE;&#x63D0;&#x524D;&#x505A;&#x597D;&#x89C4;&#x5219;&#x7EA6;&#x675F;&#xFF0C;&#x4F7F;&#x9879;&#x76EE;&#x7684;&#x5F00;&#x53D1;&#x66F4;&#x52A0;&#x987A;&#x7545;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x63A5;&#x4E0B;&#x6765;&#x4F1A;&#x8DDF;&#x5927;&#x8BF4;&#x4E00;&#x4E0B;&#x5982;&#x4F55;&#x7528;webpack+ts &#x5199;three&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x4E3B;&#x6D41;&#x7684;&#x524D;&#x7AEF;&#x6846;&#x67B6;vue&#x3001;react&#xFF0C;&#x524D;&#x671F;&#x8FD8;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x9700;&#x8981;&#xFF0C;&#x6211;&#x4F1A;&#x653E;&#x5230;&#x540E;&#x9762;&#x8BF4;&#x3002;</p>
+<p>&#x6211;&#x5F53;&#x524D;&#x9009;&#x62E9;&#x7684;webpack &#x662F;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;webpack 5&#xFF0C;&#x5177;&#x4F53;<a href="https://webpack.docschina.org/guides/getting-started/" target="_blank">&#x6307;&#x5357;</a>&#x53EF;&#x53C2;&#x8003;&#x5B98;&#x7F51;&#x3002;</p>
+<p>1.&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x521D;&#x59CB;&#x5316; npm</p>
+<pre><code>mkdir 01-start
+cd 01-start
+npm init -y
+</code></pre><p>2.&#x8C03;&#x6574; <code>package.json</code> &#x6587;&#x4EF6;&#xFF0C;&#x4EE5;&#x4FBF;&#x786E;&#x4FDD;&#x6211;&#x4EEC;&#x5B89;&#x88C5;&#x5305;&#x662F; <code>private(&#x79C1;&#x6709;&#x7684;)</code>&#xFF0C;&#x5E76;&#x4E14;&#x79FB;&#x9664; <code>main</code> &#x5165;&#x53E3;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x610F;&#x5916;&#x53D1;&#x5E03;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-diff"> {
+   &quot;name&quot;: &quot;webpack-demo&quot;,
+   &quot;version&quot;: &quot;1.0.0&quot;,
+   &quot;description&quot;: &quot;&quot;,
+<span class="hljs-deletion">-  &quot;main&quot;: &quot;index.js&quot;,</span>
+<span class="hljs-addition">+  &quot;private&quot;: true,</span>
+   &quot;scripts&quot;: {
+     &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+   },
+   &quot;keywords&quot;: [],
+   &quot;author&quot;: &quot;&quot;,
+   &quot;license&quot;: &quot;MIT&quot;,
+   &quot;devDependencies&quot;: {
+     &quot;webpack&quot;: &quot;^5.38.1&quot;,
+     &quot;webpack-cli&quot;: &quot;^4.7.2&quot;,
+   }
+ }
+</code></pre>
+<p>3.&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x6587;&#x4EF6;</p>
 <ul>
-<li>&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#xFF08;Vertex shader&#xFF09;&#xFF1A;&#x63CF;&#x8FF0;&#x9876;&#x70B9;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x5982;&#x4F4D;&#x7F6E;&#x3001;&#x989C;&#x8272;&#x7B49;&#x3002;</li>
-<li>&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;&#xFF08;Fragment shader&#xFF09;&#xFF1A;&#x8FDB;&#x884C;&#x9010;&#x7247;&#x5143;&#x5904;&#x7406;&#xFF0C;&#x5982;&#x5149;&#x7167;&#x3002;</li>
+<li>webpack &#x76F8;&#x5173;&#x7684;&#x4F9D;&#x8D56;</li>
 </ul>
-<p>&#x770B;&#x4E86;&#x8FD9;&#x4E24;&#x4E2A;&#x540D;&#x8BCD;&#x7684;&#x89E3;&#x91CA;&#xFF0C;&#x6211;&#x60F3;&#x5F88;&#x591A;&#x521D;&#x5B66;&#x8005;&#x4F1A;&#x662F;&#x61F5;&#x7684;&#x3002;</p>
-<p>&#x6211;&#x7ED9;&#x5927;&#x5BB6;&#x7FFB;&#x8BD1;&#x7FFB;&#x8BD1;&#xFF1A;</p>
-<p>&#x8865;&#x95F4;&#x52A8;&#x753B;&#x5927;&#x5BB6;&#x77E5;&#x9053;&#x4E0D;&#xFF1F;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x91CC;&#x7684;&#x9876;&#x70B9;&#x5C31;&#x662F;&#x8865;&#x95F4;&#x52A8;&#x753B;&#x91CC;&#x7684;&#x5173;&#x952E;&#x5E27;&#xFF0C;&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;&#x91CC;&#x7684;&#x7247;&#x5143;&#x5C31;&#x662F;&#x5173;&#x952E;&#x5E27;&#x4E4B;&#x95F4;&#x4EE5;&#x67D0;&#x79CD;&#x7B97;&#x6CD5;&#x7B97;&#x51FA;&#x7684;&#x63D2;&#x503C;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x54B1;&#x4EEC;webgl&#x91CC;&#x7684;&#x7247;&#x5143;&#x662F;&#x50CF;&#x7D20;&#x7684;&#x610F;&#x601D;&#x3002;</p>
-<p>&#x518D;&#x7ED9;&#x5927;&#x5BB6;&#x4E3E;&#x4E00;&#x4E2A;&#x66F4;&#x7B80;&#x5355;&#x3001;&#x66F4;&#x8D34;&#x5207;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
-<p>&#x4E24;&#x70B9;&#x51B3;&#x5B9A;&#x4E00;&#x6761;&#x76F4;&#x7EBF;&#x5927;&#x5BB6;&#x77E5;&#x9053;&#x4E0D;&#xFF1F;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x91CC;&#x7684;&#x9876;&#x70B9;&#x5C31;&#x662F;&#x51B3;&#x5B9A;&#x8FD9;&#x4E00;&#x6761;&#x76F4;&#x7EBF;&#x7684;&#x4E24;&#x4E2A;&#x70B9;&#xFF0C;&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;&#x91CC;&#x7684;&#x7247;&#x5143;&#x5C31;&#x662F;&#x628A;&#x76F4;&#x7EBF;&#x753B;&#x5230;&#x753B;&#x5E03;&#x4E0A;&#x540E;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x70B9;&#x4E4B;&#x95F4;&#x6784;&#x6210;&#x76F4;&#x7EBF;&#x7684;&#x6BCF;&#x4E2A;&#x50CF;&#x7D20;&#x3002;</p>
-<p>&#x5173;&#x4E8E;&#x6982;&#x5FF5;&#x54B1;&#x4EEC;&#x5C31;&#x8BF4;&#x5230;&#x8FD9;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x54B1;&#x4EEC;&#x8BF4;&#x7740;&#x8272;&#x5668;&#x8BED;&#x8A00;&#x3002;</p>
-<h4 id="5-2-&#x7740;&#x8272;&#x5668;&#x8BED;&#x8A00;">5-2-&#x7740;&#x8272;&#x5668;&#x8BED;&#x8A00;</h4>
-<p>webgl &#x7684;&#x7740;&#x8272;&#x5668;&#x8BED;&#x8A00;&#x662F;GLSL ES&#x8BED;&#x8A00;</p>
-<ul>
-<li>&#x9876;&#x70B9;&#x7740;&#x8272;&#x7A0B;&#x5E8F;&#xFF0C;&#x8981;&#x5199;&#x5728;type=&#x201C;x-shader/x-vertex&#x201D; &#x7684;script&#x4E2D;&#x3002;</li>
+<pre><code>npm install webpack webpack-cli webpack-dev-server --save-dev
+</code></pre><ul>
+<li>ts &#x76F8;&#x5173;&#x7684;&#x4F9D;&#x8D56;</li>
 </ul>
-<pre><code class="lang-js">&lt;script id=&quot;vertexShader&quot; type=&quot;x-shader/x-vertex&quot;&gt;
-    void main() {
-        gl_Position = vec4(0.0, 0.0, 0.0, 1.0);
-        gl_PointSize = 100.0;
-    }
-&lt;/script&gt;
-</code></pre>
-<ul>
-<li>&#x7247;&#x5143;&#x7740;&#x8272;&#x7A0B;&#x5E8F;&#xFF0C;&#x8981;&#x5199;&#x5728;type=&#x201C;x-shader/x-fragment&#x201D; &#x7684;script&#x4E2D;&#x3002;</li>
+<pre><code>npm install typescript ts-loader --save-dev
+</code></pre><ul>
+<li>three &#x76F8;&#x5173;&#x7684;&#x4F9D;&#x8D56;</li>
 </ul>
-<pre><code class="lang-js">&lt;script id=&quot;fragmentShader&quot; type=&quot;x-shader/x-fragment&quot;&gt;
-    void main() {
-        gl_FragColor = vec4(1.0, 1.0, 0.0, 1.0);
-    }
-&lt;/script&gt;
-</code></pre>
-<p>void main() {&#x2026;&#x2026; } &#x662F;&#x4E3B;&#x4F53;&#x51FD;&#x6570;&#x3002;</p>
-<p>&#x5728;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x4E2D;&#xFF0C;gl_Position &#x662F;&#x9876;&#x70B9;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;gl_PointSize &#x662F;&#x9876;&#x70B9;&#x7684;&#x5C3A;&#x5BF8;&#xFF0C;&#x8FD9;&#x79CD;&#x540D;&#x79F0;&#x90FD;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x5199;&#x6210;&#x522B;&#x7684;&#x3002;</p>
-<p>&#x5728;&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;&#x4E2D;&#xFF0C;gl_FragColor &#x662F;&#x7247;&#x5143;&#x7684;&#x989C;&#x8272;&#x3002;</p>
-<p>vec4()  &#x662F;&#x4E00;&#x4E2A;4&#x7EF4;&#x77E2;&#x91CF;&#x5BF9;&#x8C61;&#x3002;</p>
-<p>&#x5C06;vec4() &#x8D4B;&#x503C;&#x7ED9;&#x9876;&#x70B9;&#x70B9;&#x4F4D;gl_Position &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x524D;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x662F;x&#x3001;y&#x3001;z&#xFF0C;&#x7B2C;4&#x4E2A;&#x53C2;&#x6570;&#x9ED8;&#x8BA4;1.0&#xFF0C;&#x5176;&#x542B;&#x4E49;&#x6211;&#x4EEC;&#x540E;&#x9762;&#x4F1A;&#x8BE6;&#x89E3;&#xFF1B;</p>
-<p>&#x5C06;vec4() &#x8D4B;&#x503C;&#x7ED9;&#x7247;&#x5143;&#x989C;&#x8272;gl_FragColor &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x662F;r,g,b,a&#x3002;</p>
-<p>&#x81F3;&#x4E8E;GLSL ES&#x8BED;&#x8A00;&#x7684;&#x5176;&#x5B83;&#x77E5;&#x8BC6;&#xFF0C;&#x54B1;&#x4EEC;&#x4F1A;&#x5728;&#x540E;&#x9762;&#x53E6;&#x5F00;&#x4E00;&#x7BC7;&#x8BE6;&#x89E3;&#xFF0C;&#x8FD9;&#x91CC;&#x5148;&#x4EE5;&#x5165;&#x95E8;&#x4E3A;&#x4E3B;&#x3002;</p>
-<p>&#x5728;&#x7B2C;6&#x6B65;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;initShaders() &#xFF0C;&#x8FD9;&#x662F;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;&#x7740;&#x8272;&#x5668;&#x7684;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x54B1;&#x4EEC;&#x8BE6;&#x7EC6;&#x8BF4;&#x4E00;&#x4E0B;&#x3002;</p>
-<h3 id="6-&#x7740;&#x8272;&#x5668;&#x521D;&#x59CB;&#x5316;">6-&#x7740;&#x8272;&#x5668;&#x521D;&#x59CB;&#x5316;</h3>
-<p>&#x521D;&#x59CB;&#x5316;&#x7740;&#x8272;&#x5668;&#x7684;&#x6B65;&#x9AA4;&#xFF1A;</p>
-<ol>
-<li><p>&#x5EFA;&#x7ACB;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#xFF0C;&#x76EE;&#x524D;&#x8FD9;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x624B;&#x7ED8;&#x677F;&#x7684;&#x5916;&#x58F3;&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> shaderProgram = gl.createProgram();
-</code></pre>
-</li>
-</ol>
-<ol>
-<li><p>&#x5EFA;&#x7ACB;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;&#x548C;&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x662F;&#x624B;&#x7ED8;&#x677F;&#x91CC;&#x7528;&#x4E8E;&#x63A5;&#x6536;&#x89E6;&#x63A7;&#x7B14;&#x4FE1;&#x53F7;&#x7684;&#x96F6;&#x90E8;&#x4EF6;&#xFF0C;&#x4E8C;&#x8005;&#x53EF;&#x4EE5;&#x5206;&#x5DE5;&#x5408;&#x4F5C;&#xFF0C;&#x628A;&#x89E6;&#x63A7;&#x7B14;&#x7684;&#x538B;&#x611F;&#xFF08;js&#x4FE1;&#x53F7;&#xFF09;&#x89E3;&#x6790;&#x4E3A;&#x8BA1;&#x7B97;&#x673A;&#x8BED;&#x8A00;(GLSL ES)&#xFF0C;&#x7136;&#x540E;&#x8BA9;&#x8BA1;&#x7B97;&#x673A;(&#x6D4F;&#x89C8;&#x5668;&#x7684;webgl &#x6E32;&#x67D3;&#x5F15;&#x64CE;)&#x8BC6;&#x522B;&#x663E;&#x793A;&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource);
-<span class="hljs-keyword">const</span> fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
-</code></pre>
-</li>
-</ol>
-<ol>
-<li><p>&#x5C06;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;&#x548C;&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;&#x88C5;&#x8FDB;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x8FD9;&#x5C31;&#x5B8C;&#x6210;&#x7684;&#x624B;&#x7ED8;&#x677F;&#x7684;&#x62FC;&#x88C5;&#x3002;</p>
-<pre><code class="lang-js">gl.attachShader(shaderProgram, vertexShader);
-gl.attachShader(shaderProgram, fragmentShader);
-</code></pre>
-</li>
-</ol>
-<ol>
-<li><p>&#x8FDE;&#x63A5;webgl &#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#x548C;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#xFF0C;&#x5C31;&#x50CF;&#x8FDE;&#x63A5;&#x89E6;&#x63A7;&#x7B14;&#x548C;&#x624B;&#x7ED8;&#x677F;&#x4E00;&#x6837;&#xFF08;&#x89E6;&#x63A7;&#x7B14;&#x91CC;&#x6709;&#x4F20;&#x611F;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x5411;&#x624B;&#x7ED8;&#x677F;&#x53D1;&#x9001;&#x4FE1;&#x53F7;&#xFF09;&#x3002;</p>
-<pre><code>gl.linkProgram(shaderProgram);
-</code></pre></li>
-</ol>
-<ol>
-<li><p>&#x542F;&#x52A8;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#xFF0C;&#x5C31;&#x50CF;&#x6309;&#x4E0B;&#x4E86;&#x624B;&#x7ED8;&#x677F;&#x7684;&#x542F;&#x52A8;&#x6309;&#x94AE;&#xFF0C;&#x4F7F;&#x5176;&#x5F00;&#x59CB;&#x5DE5;&#x4F5C;&#x3002;</p>
-<pre><code>gl.useProgram(program);
-</code></pre></li>
-</ol>
-<p>&#x4E0A;&#x9762;&#x7B2C;&#x4E8C;&#x6B65;&#x4E2D;&#x7684;&#x5EFA;&#x7ACB;&#x7740;&#x8272;&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;loadShader()&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x53C2;&#x6570;&#x662F;(webgl&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#xFF0C;&#x7740;&#x8272;&#x5668;&#x7C7B;&#x578B;&#xFF0C;&#x7740;&#x8272;&#x5668;&#x6E90;&#x6587;&#x4EF6;)&#xFF0C;gl.VERTEX_SHADER &#x662F;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7C7B;&#x578B;&#xFF0C;gl.FRAGMENT_SHADER&#x662F;&#x7247;&#x5143;&#x7740;&#x8272;&#x5668;&#x7C7B;&#x578B;&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadShader</span>(<span class="hljs-params">gl, type, source</span>) </span>{
-    <span class="hljs-keyword">const</span> shader = gl.createShader(type);
-    gl.shaderSource(shader, source);
-    gl.compileShader(shader);
-    <span class="hljs-keyword">return</span> shader;
+<pre><code>npm install three @types/three --save
+</code></pre><p>package.json &#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;three-lesson-02&quot;</span>,
+  <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;1.0.0&quot;</span>,
+  <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+  <span class="hljs-string">&quot;private&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;test&quot;</span>: <span class="hljs-string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>,
+    <span class="hljs-string">&quot;start&quot;</span>: <span class="hljs-string">&quot;webpack serve --open&quot;</span>,
+  },
+  <span class="hljs-string">&quot;keywords&quot;</span>: [],
+  <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+  <span class="hljs-string">&quot;license&quot;</span>: <span class="hljs-string">&quot;ISC&quot;</span>,
+  <span class="hljs-string">&quot;devDependencies&quot;</span>: {
+    <span class="hljs-string">&quot;ts-loader&quot;</span>: <span class="hljs-string">&quot;^9.2.8&quot;</span>,
+    <span class="hljs-string">&quot;typescript&quot;</span>: <span class="hljs-string">&quot;^4.6.2&quot;</span>,
+    <span class="hljs-string">&quot;webpack&quot;</span>: <span class="hljs-string">&quot;^5.70.0&quot;</span>,
+    <span class="hljs-string">&quot;webpack-cli&quot;</span>: <span class="hljs-string">&quot;^4.9.2&quot;</span>,
+    <span class="hljs-string">&quot;webpack-dev-server&quot;</span>: <span class="hljs-string">&quot;^4.7.4&quot;</span>
+  },
+  <span class="hljs-string">&quot;dependencies&quot;</span>: {
+    <span class="hljs-string">&quot;@types/three&quot;</span>: <span class="hljs-string">&quot;^0.138.0&quot;</span>,
+    <span class="hljs-string">&quot;three&quot;</span>: <span class="hljs-string">&quot;^0.138.3&quot;</span>
+  }
 }
 </code></pre>
+<p>4.&#x5EFA;&#x7ACB;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x3002;</p>
 <ul>
-<li><p>gl.createShader(type) &#xFF1A;&#x6839;&#x636E;&#x7740;&#x8272;&#x5668;&#x7C7B;&#x578B;&#x5EFA;&#x7ACB;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
-</li>
-<li><p>gl.shaderSource(shader, source)&#xFF1A;&#x5C06;&#x7740;&#x8272;&#x5668;&#x6E90;&#x6587;&#x4EF6;&#x4F20;&#x5165;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x7740;&#x8272;&#x5668;&#x6E90;&#x6587;&#x4EF6;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x5728;script &#x91CC;&#x7528;GLSL ES&#x5199;&#x7684;&#x7740;&#x8272;&#x7A0B;&#x5E8F;&#x3002;</p>
-</li>
-<li><p>gl.compileShader(shader)&#xFF1A;&#x7F16;&#x8BD1;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;&#x3002;</p>
-</li>
+<li>&#x76EE;&#x5F55;&#x7ED3;&#x6784;</li>
 </ul>
-<p>&#x5728;&#x4EE5;&#x540E;&#x7684;&#x5B66;&#x4E60;&#x91CC;&#xFF0C;initShaders &#x4F1A;&#x7ECF;&#x5E38;&#x7528;&#x5230;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x6A21;&#x5757;&#x5316;&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">initShaders</span>(<span class="hljs-params">gl,vsSource,fsSource</span>)</span>{
-    <span class="hljs-comment">//&#x521B;&#x5EFA;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;</span>
-    <span class="hljs-keyword">const</span> program = gl.createProgram();
-    <span class="hljs-comment">//&#x5EFA;&#x7ACB;&#x7740;&#x8272;&#x5BF9;&#x8C61;</span>
-    <span class="hljs-keyword">const</span> vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource);
-    <span class="hljs-keyword">const</span> fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
-    <span class="hljs-comment">//&#x628A;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5BF9;&#x8C61;&#x88C5;&#x8FDB;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#x4E2D;</span>
-    gl.attachShader(program, vertexShader);
-    <span class="hljs-comment">//&#x628A;&#x7247;&#x5143;&#x7740;&#x8272;&#x5BF9;&#x8C61;&#x88C5;&#x8FDB;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#x4E2D;</span>
-    gl.attachShader(program, fragmentShader);
-    <span class="hljs-comment">//&#x8FDE;&#x63A5;webgl&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#x548C;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;</span>
-    gl.linkProgram(program);
-    <span class="hljs-comment">//&#x542F;&#x52A8;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;</span>
-    gl.useProgram(program);
-    <span class="hljs-comment">//&#x5C06;&#x7A0B;&#x5E8F;&#x5BF9;&#x8C61;&#x6302;&#x5230;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#x4E0A;</span>
-    gl.program = program;
-    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
-}
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadShader</span>(<span class="hljs-params">gl, type, source</span>) </span>{
-    <span class="hljs-comment">//&#x6839;&#x636E;&#x7740;&#x8272;&#x7C7B;&#x578B;&#xFF0C;&#x5EFA;&#x7ACB;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;</span>
-    <span class="hljs-keyword">const</span> shader = gl.createShader(type);
-    <span class="hljs-comment">//&#x5C06;&#x7740;&#x8272;&#x5668;&#x6E90;&#x6587;&#x4EF6;&#x4F20;&#x5165;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;&#x4E2D;</span>
-    gl.shaderSource(shader, source);
-    <span class="hljs-comment">//&#x7F16;&#x8BD1;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;</span>
-    gl.compileShader(shader);
-    <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x8C61;</span>
-    <span class="hljs-keyword">return</span> shader;
-}
-<span class="hljs-keyword">export</span> {initShaders}
+<pre><code class="lang-diff">01-start
+|- dist
+    |- 01-helloWorld.html
+|- src
+    |- helloWorld.ts
+|- package.json
+|- package-lock.json
+|- tsconfig.json
+|- webpack.config.js
 </code></pre>
-<p>&#x540E;&#x9762;&#x5728;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;&#xFF0C;import &#x5F15;&#x5165;&#x5373;&#x53EF;&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {initShaders} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../jsm/Utils.js&apos;</span>;
+<ul>
+<li>dist/01-helloWorld.html</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>helloWorld<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+      <span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">overflow</span>: hidden;
+      }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;canvas&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;helloWorld.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
-<p>&#x7EFC;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;webgl &#x7ED8;&#x56FE;&#x597D;&#x9EBB;&#x70E6;&#x554A;&#xFF01;</p>
-<p>&#x9EBB;&#x70E6;&#x4E0D;&#x662F;&#x4E0D;&#x5B66;&#x7684;&#x7406;&#x7531;&#xFF0C;&#x56E0;&#x4E3A;&#x540E;&#x9762;&#x8FD8;&#x6709;three.js &#x4E3A;&#x4F60;&#x6392;&#x5FE7;&#x89E3;&#x96BE;&#x3002;</p>
-<p>&#x90A3;&#x6211;&#x4EEC;&#x4E3A;&#x5565;&#x4E0D;&#x76F4;&#x63A5;&#x5B66;&#x4E60;three.js &#x5462;&#xFF1F;</p>
-<p>&#x90A3;&#x662F;&#x56E0;&#x4E3A;three.js &#x82E5;&#x662F;&#x53EA;&#x60F3;&#x753B;&#x4E2A;&#x65CB;&#x8F6C;&#x7684;&#x7ACB;&#x65B9;&#x4F53;&#x8FD8;&#x597D;&#xFF0C;&#x82E5;&#x662F;&#x8981;&#x6DF1;&#x5165;&#x5B66;&#x4E60;&#xFF0C;&#x5B9E;&#x73B0;&#x590D;&#x6742;&#x7684;&#x6A21;&#x578B;&#x4EA4;&#x4E92;&#x903B;&#x8F91;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x8981;&#x6709;webgl &#x57FA;&#x7840;&#x4E86;&#x3002;</p>
-<p>&#x8FD9;&#x4E00;&#x7BC7;&#xFF0C;&#x6211;&#x4EEC;&#x8BB2;&#x4E86;webgl &#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF0C;&#x8D70;&#x4E86;&#x4E00;&#x904D;webgl &#x7ED8;&#x56FE;&#x7684;&#x57FA;&#x672C;&#x8FC7;&#x7A0B;&#xFF0C;&#x8BA9;&#x5927;&#x5BB6;&#x5BF9;webgl &#x7684;&#x7ED8;&#x56FE;&#x539F;&#x7406;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x8BA4;&#x77E5;&#x3002;</p>
-<p>&#x4E0B;&#x4E00;&#x7BC7;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8BF4;&#x4E00;&#x4E0B;js &#x5982;&#x4F55;&#x5411;&#x7740;&#x8272;&#x5668;&#x53D1;&#x53F7;&#x65BD;&#x4EE4;&#xFF0C;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x9F20;&#x6807;&#x63A7;&#x5236;&#x9876;&#x70B9;&#x4F4D;&#x7F6E;&#x7684;&#x6848;&#x4F8B;&#x3002;</p>
-<h6 id=""> </h6>
+<ul>
+<li>src/helloWorld.ts</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> str:string=<span class="hljs-string">&apos;Hello World&apos;</span>
+<span class="hljs-built_in">console</span>.log(str)
+</code></pre>
+<ul>
+<li>webpack.config.js</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+
+<span class="hljs-built_in">module</span>.exports = {
+  mode: <span class="hljs-string">&apos;development&apos;</span>,
+  entry: {
+    helloWorld: <span class="hljs-string">&apos;./src/helloWorld.ts&apos;</span>,
+  },
+  devtool: <span class="hljs-string">&apos;inline-source-map&apos;</span>,
+  devServer: {
+    <span class="hljs-keyword">static</span>: <span class="hljs-string">&apos;./dist&apos;</span>,
+  },
+  output: {
+    filename: <span class="hljs-string">&apos;[name].js&apos;</span>,
+    path: path.resolve(__dirname, <span class="hljs-string">&apos;dist&apos;</span>),
+  },
+  resolve: {
+    extensions: [<span class="hljs-string">&quot;.ts&quot;</span>, <span class="hljs-string">&quot;.tsx&quot;</span>, <span class="hljs-string">&quot;.js&quot;</span>]
+  },
+  <span class="hljs-built_in">module</span>: {
+    rules: [
+      { test: <span class="hljs-regexp">/\.tsx?$/</span>, loader: <span class="hljs-string">&quot;ts-loader&quot;</span> }
+    ]
+  }
+};
+</code></pre>
+<ul>
+<li>tsconfig.json</li>
+</ul>
+<pre><code>{
+  &quot;compilerOptions&quot;: {
+    &quot;sourceMap&quot;: true,
+    &quot;target&quot;: &quot;es6&quot;,
+    &quot;module&quot;: &quot;es6&quot;
+  }
+}
+</code></pre><p>5.&#x8FD0;&#x884C;&#x9879;&#x76EE;&#xFF0C;&#x82E5;&#x5728;01-helloWorld.html&#x4E2D;&#x6253;&#x5370;&#x51FA;&#x201C;Hello World&#x201D;&#xFF0C;&#x5C31;&#x8BF4;&#x660E;&#x914D;&#x7F6E;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x3002;</p>
+<pre><code>npm run start
+</code></pre><p>6.&#x591A;&#x9875;&#x9762;&#x3002;</p>
+<p>&#x5728;dist &#x4E2D;&#x518D;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x9875;&#x9762; 02-box.html&#xFF0C;&#x7528;&#x6765;&#x663E;&#x793A;&#x6211;&#x4EEC;&#x5165;&#x95E8;&#x65F6;&#x7ED8;&#x5236;&#x7684;&#x7ACB;&#x65B9;&#x4F53;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>box<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-tag">body</span> {
+      <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">overflow</span>: hidden;
+    }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;canvas&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;box.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x5728;src &#x4E2D;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;box.js &#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x7ED8;&#x5236;&#x7ACB;&#x65B9;&#x4F53;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {
+  BoxGeometry,Mesh,MeshNormalMaterial,PerspectiveCamera,Scene,WebGLRenderer,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;three&apos;</span>
+
+<span class="hljs-keyword">const</span> scene = <span class="hljs-keyword">new</span> Scene()
+<span class="hljs-keyword">const</span> camera = <span class="hljs-keyword">new</span> PerspectiveCamera( <span class="hljs-number">75</span>, <span class="hljs-built_in">window</span>.innerWidth / <span class="hljs-built_in">window</span>.innerHeight, <span class="hljs-number">0.1</span>, <span class="hljs-number">1000</span> )
+
+<span class="hljs-keyword">const</span> canvas = <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">HTMLCanvasElement</span>&gt;</span>document.getElementById(&apos;canvas&apos;);
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+const renderer = new WebGLRenderer({canvas});
+
+const geometry = new BoxGeometry();
+const material = new MeshNormalMaterial();
+const cube = new Mesh( geometry, material )
+scene.add( cube );
+
+camera.position.z = 5;
+
+function animate() {
+  requestAnimationFrame( animate )
+
+  cube.rotation.x += 0.01
+  cube.rotation.y += 0.01
+
+  renderer.render( scene, camera )
+};
+
+animate();
+</span></code></pre>
+<p>&#x5728;webpack.config.js &#x4E2D;&#x6DFB;&#x52A0;&#x5F69;&#x8272;&#x7ACB;&#x65B9;&#x4F53;&#x9875;&#x9762;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x5165;&#x53E3;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+  &#x2026;&#x2026;
+  entry: {
+    helloWorld: <span class="hljs-string">&apos;./src/helloWorld.ts&apos;</span>,
+    box: <span class="hljs-string">&apos;./src/box.ts&apos;</span>,
+  },
+  &#x2026;&#x2026;
+};
+</code></pre>
+<p>&#x542F;&#x670D;&#x52A1;&#x540E;&#xFF0C;&#x6253;&#x5F00;box.html &#x9875;&#x9762;&#xFF0C;&#x4FBF;&#x53EF;&#x4EE5;&#x770B;&#x89C1;&#x65CB;&#x8F6C;&#x7684;&#x7ACB;&#x65B9;&#x4F53;&#x3002;</p>
 
                                 
                                 </section>
@@ -620,10 +543,14 @@ gl.attachShader(shaderProgram, fragmentShader);
 
             
                 
-                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                <a href="three.html" class="navigation navigation-prev " aria-label="Previous page: three">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="01.html" class="navigation navigation-next " aria-label="Next page: 第2节：三维机房">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -632,7 +559,7 @@ gl.attachShader(shaderProgram, fragmentShader);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction1","level":"1.1.1","depth":2,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Introduction1","level":"1.1.1","depth":2,"path":"three/01.md","ref":"./three/01.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"three/01.md","mtime":"2022-11-19T07:55:02.613Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-19T07:55:05.798Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第1节：three入门","level":"1.3.1","depth":2,"next":{"title":"第2节：三维机房","level":"1.3.2","depth":2,"path":"three/01.md","ref":"./three/01.md","articles":[]},"previous":{"title":"three","level":"1.3","depth":1,"path":"three/three.md","ref":"./three/three.md","articles":[{"title":"第1节：three入门","level":"1.3.1","depth":2,"path":"three/01.md","ref":"./three/01.md","articles":[]},{"title":"第2节：三维机房","level":"1.3.2","depth":2,"path":"three/01.md","ref":"./three/01.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"three/01.md","mtime":"2022-11-19T09:19:43.393Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-19T09:30:20.589Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
